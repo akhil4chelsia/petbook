@@ -1,6 +1,9 @@
 # petbook
 A sample react + ionic(capacitor) mobile app 
 
+![](/screenshots/image1.png)
+![](/screenshots/image2.png)
+
 Steps to convert ReactJS app to Mobile app (Android and iOS)
 
 Requirements
@@ -10,6 +13,8 @@ Android Studio
 Xcode
 
 First, go to the root of your existing react app and create a file capacitor.config.json and inside that put the below code.
+
+```
 {
   "appId": "io.ionic.nameofyourapp",
   "appName": "nameofyourapp",
@@ -18,8 +23,10 @@ First, go to the root of your existing react app and create a file capacitor.con
   "webDir": "build",
   "cordova": {}
 }
+```
 
 2. Now create another file name ionic.config.json and inside that insert the below code.
+```
 {
   "name": "nameofyourapp",
   "integrations": {
@@ -27,6 +34,7 @@ First, go to the root of your existing react app and create a file capacitor.con
   },
   "type": "react"
 }
+```
 
 Note: replace nameofyourapp in both files with the name of your app.
 
@@ -36,22 +44,22 @@ Note: this will create the build folder in your root porject and the name of the
 
 
 4. Now we will install ionic globally in our machine. To install ionic globally in your machine open your terminal and run the below command.
-npm install -g @ionic/cli
+`npm install -g @ionic/cli`
 
 5. Now install the capacitor core in our project.
-npm install @capacitor/core --save
+`npm install @capacitor/core --save`
 
 Android
 
 6. After that, we will first create an android app with our existing react app. Open your terminal and type
 
-ionic capacitor add android
+`ionic capacitor add android`
 
 This will create the android folder in your root project and install all the required dependencies.
 
 7. Now run the below command to open your android project in android studio.
 
-npx cap open android
+`npx cap open android`
 
 Wait some time and then it will ask you to update the Gradle. Just update the Gradle to the latest version and run the project in the emulator. You can also connect your mobile to run the project live on your mobile phone.
 Image for post
@@ -61,9 +69,9 @@ iOS
 
 9. To create ios app run the below command
 
-ionic capacitor add ios
+`ionic capacitor add ios`
 
 This will install all the required dependencies and ios folder to your project.
 10. Now run the below command to open your ios project in Xcode.
 
-npx cap open ios
+`npx cap open ios`
