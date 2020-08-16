@@ -4,6 +4,8 @@ A sample react + ionic(capacitor) mobile app
 ![](/screenshots/image1.png)
 ![](/screenshots/image2.png)
 
+Web: https://hopeful-brattain-e7957d.netlify.app/
+
 Steps to convert ReactJS app to Mobile app (Android and iOS)
 
 Requirements
